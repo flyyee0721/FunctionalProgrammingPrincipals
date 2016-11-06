@@ -50,7 +50,7 @@ def sumCube(a: Int, b:Int) = sum(x => x * x * x, a, b)
 def sumLinear(f: Int => Int)(a:Int, b:Int): Int => {
   if (a > b) 0 else f(a) + sum(f)(a + 1, b)
   
-def sumTail(f: Int => Int, a: Int, b:Int): Int = {
+def sumTail(f: Int => Int)(a: Int, b:Int): Int = {
   //Helper function
   def sumHelper(a: Int, acc: Int): Int = {
      //Accumulate the value from previous function call instead of after iterative function call returns
