@@ -43,4 +43,10 @@ def newSumFactorial(a:Int, b:Int): Int = sum(fact, a, b)
 def sumInts(a: Int, b:Int) = sum((x:Int) => x, a, b)
 def sumCube(a: Int, b:Int) = sum(x => x * x * x, a, b)
 ```
-* 
+* Linear recursion vs tail-recursion 
+  1. Sum function in the form of linear recursion takes up O(n) stack space because the after executing the function sum(f)(a + 1, b), the code need to return back to sum(f)(a, b), thus the stack space of  sum(f)(a, b) call cannot be released until the recursive calls are done
+```scala
+def sum(f: Int => Int)(a:Int, b:Int): Int => {
+  if (a > b) 0 else f(a) + sum(f)(a + 1, b)
+```
+  1. Tail recursion takes O(1) stack space in scala because the compiler is able to translate it into iteration.

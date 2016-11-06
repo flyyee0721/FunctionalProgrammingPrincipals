@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="896a2694-440f-429b-a40d-43cc403f1a1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week2/funsets/Summary.md" afterPath="$PROJECT_DIR$/week2/funsets/Summary.md" />
     </list>
     <ignored path="ProgFun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +54,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="555">
-                <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+              <first_editor relative-caret-position="615">
+                <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -704,8 +703,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="555">
-            <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+          <first_editor relative-caret-position="615">
+            <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor />
