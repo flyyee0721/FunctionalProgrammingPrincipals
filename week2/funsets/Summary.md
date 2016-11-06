@@ -11,7 +11,7 @@
   2. Function type A=>B takes type A and return type B.
 * Example as below:
   1. We have three functions sumCube, sumInts and sumFactorial that sum up values f(x) for x in the range [a, b]
-  2. we can factor out the common pattern into a single method and pass it as a parameter.
+  2. We can factor out the common pattern into a single method and pass it as a parameter.
   3. Passing functions to high order functions causes the creation of many small functions, such as the cube and fact function.
 ```scala
 def sumCube(a: Int, b:Int): Int = 
@@ -35,6 +35,12 @@ def newSumCube(a:Int, b:Int): Int = sum(cube, a, b)
 def newSumFactorial(a:Int, b:Int): Int = sum(fact, a, b)
 ```
 * **Anonymous Function Syntax**, A.K.A literal function, a function without a given name.
-* 
-* 
+  1. (x: Int) => x * x * x is the anonymous function of sumCube, **(Input parameters separated by comma) => function body** 
+  2. The input parameter type can be omitted if the compiler can infer it from the context. 
+  3. Anonymous function can take multiple parameters such as (a:Int, b:Int) => a + b
+  4. _Anonymous function is syntax sugar but not essential in scala._
+```scala
+def sumInts(a: Int, b:Int) = sum((x:Int) => x, a, b)
+def sumCube(a: Int, b:Int) = sum(x => x * x * x, a, b)
+```
 * 
