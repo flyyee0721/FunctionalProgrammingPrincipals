@@ -11,6 +11,8 @@
   2. Function type A=>B takes type A and return type B.
 * Example as below:
   1. We have three functions sumCube, sumInts and sumFactorial that sum up values f(x) for x in the range [a, b]
+  2. we can factor out the common pattern into a single method and pass it as a parameter.
+  3. Passing functions to high order functions causes the creation of many small functions, such as the cube and fact function.
 ```scala
 def sumCube(a: Int, b:Int): Int = 
     if (a > b) 0 else cube(a) + sumCube(a+1, b)
@@ -22,17 +24,16 @@ def sumFactorial(a: Int, b:Int): Int =
     if (a > b) 0 else fact(a) + sumFactorial(a + 1, b)
     
 def cube(x:Int): Int = x * x * x
+
 def fact(x:Int): Int = if (x == 0) 1 else x * fact(x - 1)
-```
-  2. we can factor out the common pattern into a single method and pass it as a parameter.
-```scala
+
 def sum(f:Int => Int, a: Int, b: Int): Int = 
     if (a > b) 0 else f(a) + sum(f, a + 1, b)
     
-def sumCube(a:Int, b:Int): Int = sum(cube, a, b)
-def sumFactorial(a:Int, b:Int): Int = sum(fact, a, b)
+def newSumCube(a:Int, b:Int): Int = sum(cube, a, b)
+
+def newSumFactorial(a:Int, b:Int): Int = sum(fact, a, b)
 ```
-  3. Passing functions to high order functions causes the creation of many small functions, such as the cube and fact function.
 * **Anonymous Function Syntax**, A.K.A literal function, a function without a given name.
 * 
 * 
