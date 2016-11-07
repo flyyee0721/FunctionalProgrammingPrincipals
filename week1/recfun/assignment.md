@@ -1,6 +1,6 @@
 #Programming Assignment: Recursion
 * Passed and verified · 10/10 points
-*Deadline: The assignment was due on October 30, 11:59 PM PDT
+* Deadline: The assignment was due on October 30, 11:59 PM PDT
 * You can still pass this assignment before the course ends.
 * Attention: You are allowed to submit a unlimited number of times for grade purposes. Once you have submitted your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
 
