@@ -1,7 +1,6 @@
 # <a> Week Two Notes </a>
 
-
-###2.1 Higher-order Functions, 
+###2.1 Higher-order Functions
 * Definition: Functions that take other functions as parameters or that return functions as results.
 * First order function acts on simple data types such as int, long and string.
 * Functions are treated as first class values in scala.
@@ -59,3 +58,15 @@ def sumTail(f: Int => Int)(a: Int, b:Int): Int = {
   sumHelper(a, 0)
 }
 ```
+
+###2.2 Currying.
+* **Currying** is a special form to write the high order functions.
+* 
+
+###2.3 Examples: Finding Fixed Points.
+
+
+###2.4 Scala Syntax Summary.
+
+###2.7 Evaluation and operators. 
+*
