@@ -1,11 +1,14 @@
-Programming Assignment: Functional Sets
-Passed and verified · 10/10 points
-Deadline
-Pass this assignment by November 6, 11:59 PM PST
-InstructionsMy submissionDiscussions
-Attention: You are allowed to submit an unlimited number of times for grade purposes. Once you have submitted your solution, you should see your grade and a feedback about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will count as the final grade.
+###Programming Assignment: Functional Sets
 
-In this assignment, you will work with a functional representation of sets based on the mathematical notion of characteristic functions. The goal is to gain practice with higher-order functions.
+* Passed and verified · 10/10 points
+* Deadline Pass this assignment by November 6, 11:59 PM PST
+* InstructionsMy submissionDiscussions
+* Attention: You are allowed to submit an unlimited number of times for grade purposes. Once you have submitted your solution, you should see your grade and a feedback
+  about your code on the Coursera website within 10 minutes. If you want to improve your grade, just submit an improved solution. The best of all your submissions will
+  count as the final grade.
+
+#In this assignment, you will work with a functional representation of sets based on the mathematical notion of characteristic functions. The goal is to gain practice
+with higher-order functions.
 
 Download the funsets.zip handout archive file and extract it somewhere on your machine. Write your solutions by completing the stubs in theFunSets.scala file.
 
