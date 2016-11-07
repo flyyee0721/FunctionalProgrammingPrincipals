@@ -37,7 +37,7 @@ object FunSets {
    * Returns the difference of the two given sets,
    * the set of all elements of `s` that are not in `t`.
    */
-  def diff(s: Set, t: Set): Set = (elem: Int) => (contains(s, elem) && !contains(t, elem))
+  def diff(s: Set, t: Set): Set = (elem: Int) => contains(s, elem) && !contains(t, elem)
 
   /**
    * Returns the subset of `s` for which `p` holds.
