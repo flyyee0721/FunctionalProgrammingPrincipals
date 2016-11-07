@@ -18,31 +18,31 @@ object FunSets {
   /**
    * Returns the set of the one given element.
    */
-    def singletonSet(elem: Int): Set = { (target: Int) => target == elem }
+    def singletonSet(elem: Int): Set = (target: Int) => target == elem
 
 
   /**
    * Returns the union of the two given sets,
    * the sets of all elements that are in either `s` or `t`.
    */
-  def union(s: Set, t: Set): Set = { (elem: Int) => contains(s, elem) || contains(t, elem) }
+  def union(s: Set, t: Set): Set = (elem: Int) => contains(s, elem) || contains(t, elem)
 
   /**
    * Returns the intersection of the two given sets,
    * the set of all elements that are both in `s` and `t`.
    */
-  def intersect(s: Set, t: Set): Set = { (elem: Int) => contains(s, elem) && contains(t, elem) }
+  def intersect(s: Set, t: Set): Set = (elem: Int) => contains(s, elem) && contains(t, elem)
 
   /**
    * Returns the difference of the two given sets,
    * the set of all elements of `s` that are not in `t`.
    */
-  def diff(s: Set, t: Set): Set = { (elem: Int) => (contains(s, elem) && !contains(t, elem)) }
+  def diff(s: Set, t: Set): Set = (elem: Int) => (contains(s, elem) && !contains(t, elem))
 
   /**
    * Returns the subset of `s` for which `p` holds.
    */
-  def filter(s: Set, p: Int => Boolean): Set = { (elem: Int) => contains(s, elem) && p(elem) }
+  def filter(s: Set, p: Int => Boolean): Set = (elem: Int) => contains(s, elem) && p(elem)
 
 
   /**
@@ -70,7 +70,7 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    */
-  def map(s: Set, f: Int => Int): Set = { (elem: Int) => (-bound to bound).exists(x => contains(s, x) && f(x) == elem) }
+  def map(s: Set, f: Int => Int): Set = (elem: Int) => (-bound to bound).exists(x => contains(s, x) && f(x) == elem)
 
   /**
    * Displays the contents of a set
